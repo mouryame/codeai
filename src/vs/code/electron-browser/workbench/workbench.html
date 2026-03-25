@@ -1,5 +1,5 @@
 <!-- Copyright (C) Microsoft Corporation. All rights reserved. -->
-<!DOCTYPE html>
+<!doctype html>
 <html>
 	<head>
 		<meta charset="utf-8" />
@@ -37,6 +37,8 @@
 					'self'
 					https:
 					ws:
+					http://localhost:*
+					http://127.0.0.1:*
 				;
 				font-src
 					'self'
@@ -65,14 +67,17 @@
 					richScreenReaderContent
 					chatDebugTokenizer
 				;
-		"/>
+		"
+		/>
 
 		<!-- Workbench CSS -->
-		<link rel="stylesheet" href="../../../workbench/workbench.desktop.main.css">
+		<link
+			rel="stylesheet"
+			href="../../../workbench/workbench.desktop.main.css"
+		/>
 	</head>
 
-	<body aria-label="">
-	</body>
+	<body aria-label=""></body>
 
 	<!-- Startup (do not modify order of script tags!) -->
 	<script src="./workbench.js" type="module"></script>
